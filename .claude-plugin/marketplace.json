@@ -1,0 +1,14 @@
+{
+  "name": "agent-plugin-setting",
+  "owner": {
+    "name": "seiei-sogen"
+  },
+  "description": "seiei-sogen の Claude Code 初期設定用プラグイン",
+  "plugins": [
+    {
+      "name": "agent-plugin-setting",
+      "source": "./",
+      "description": "Claude Code のプラグインと seiei-sogen/agent-skills のスキルをまとめて入れるスキル"
+    }
+  ]
+}
