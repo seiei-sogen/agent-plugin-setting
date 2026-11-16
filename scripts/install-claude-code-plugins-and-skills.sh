@@ -11,14 +11,8 @@ set -euo pipefail
 # macOS の bash 3.2 と BSD find でも動くよう、mapfile・連想配列・find -printf を使わない。
 # bash 3.2 の set -u は空の配列の "${a[@]}" をエラーにするので、${a[@]+"${a[@]}"} と書く。
 
-# 「マーケットプレイスの取得元 プラグイン名」の組。
-# pstack は cursor/plugins の harness/pstack/claude-code（Claude Code 向けの生成版）が入る。
-marketplace_sources_and_plugin_names=(
-  "cursor/plugins pstack"
-  "obra/superpowers superpowers"
-  "mattpocock/skills mattpocock-skills"
-  "dietrichgebert/ponytail ponytail"
-)
+# shellcheck source=SCRIPTDIR/claude-code-plugins.sh
+source "$(dirname "${BASH_SOURCE[0]}")/claude-code-plugins.sh"
 
 # スキルを並べただけのリポジトリ。マーケットプレイスではないので、スキルの置き場へ複写する。
 skill_collection_repository_url="https://github.com/seiei-sogen/agent-skills"

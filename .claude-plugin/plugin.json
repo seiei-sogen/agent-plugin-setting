@@ -1,6 +1,5 @@
 {
   "name": "agent-plugin-setting",
-  "version": "0.1.0",
   "description": "Claude Code のプラグインと seiei-sogen/agent-skills のスキルをまとめて入れるスキル",
   "author": {
     "name": "seiei-sogen"

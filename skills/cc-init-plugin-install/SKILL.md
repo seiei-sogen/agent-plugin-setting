@@ -1,13 +1,13 @@
 ---
 name: cc-init-plugin-install
-description: Claude Code のプラグイン（pstack、superpowers、mattpocock-skills、ponytail）と seiei-sogen/agent-skills のスキルを、リポジトリのスクリプトでまとめて入れる。セッションを作った直後の初期設定や、プラグイン・スキルが入っていない、入れ直したい、更新したいと言われたときに使う。
+description: Claude Code のプラグイン（pstack、superpowers、mattpocock-skills、ponytail）と seiei-sogen/agent-skills のスキルを、リポジトリのスクリプトでまとめて入れる。セッションを作った直後の初期設定や、プラグイン・スキルが入っていない、入れ直したいと言われたときに使う。更新したい、最新にしたいと言われたときは cc-update-plugin を使う。
 ---
 
 # Claude Code のプラグインとスキルを入れる
 
 このプラグインの `scripts/install-claude-code-plugins-and-skills.sh` を実行し、結果を報告する。
-入れるものの一覧は、このスクリプトの先頭にある。
-一覧を変える依頼なら、seiei-sogen/agent-plugin-setting リポジトリのスクリプトを編集する。
+入れるプラグインの一覧は `scripts/claude-code-plugins.sh` にある。
+一覧を変える依頼なら、seiei-sogen/agent-plugin-setting リポジトリの `scripts/claude-code-plugins.sh` を編集する。
 実行しているのはインストール時に複写されたキャッシュなので、そちらを直しても次の更新で消える。
 
 ## 手順

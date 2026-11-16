@@ -1,7 +1,7 @@
 # agent-plugin-setting
 agent-plugin-setting
 
-Claude Code のプラグインと [seiei-sogen/agent-skills](https://github.com/seiei-sogen/agent-skills) のスキルをまとめて入れるスキル `cc-init-plugin-install` を、Claude Code のプラグインとして配る。
+Claude Code のプラグインと [seiei-sogen/agent-skills](https://github.com/seiei-sogen/agent-skills) のスキルをまとめて入れるスキル `cc-init-plugin-install` と、最新にするスキル `cc-update-plugin` を、Claude Code のプラグインとして配る。
 
 ## 入れ方
 
@@ -21,4 +21,5 @@ claude plugin install agent-plugin-setting --marketplace seiei-sogen/agent-plugi
 ## 使い方
 
 Claude Code のセッションで `/agent-plugin-setting:cc-init-plugin-install` を実行する。
-入れるプラグインとスキルの一覧は `scripts/install-claude-code-plugins-and-skills.sh` の先頭にある。
+入れたプラグインとスキルを最新にするには、`/agent-plugin-setting:cc-update-plugin` を実行する。
+入れるプラグインの一覧は `scripts/claude-code-plugins.sh` にある。
